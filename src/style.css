@@ -1,19 +1,29 @@
 
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+     background-color: black;
+}
 .app{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: #3a3a3c; */
+   
 }
 .row{
     display: flex;
     margin: 4px;
 }
+
 .cell{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3a3a3c;
+    background-color: rgba(33, 33, 34, 0.616);
     color :white;
     width: 60px;
     height : 60px;
@@ -21,20 +31,35 @@
     font-size: 30px;
     margin:4px
 }
+#green{
+    background-color: yellowgreen;
+}
+#yellow{
+    background-color: goldenrod;
+}
+#normal{
+    /* background-color: rgb(53 54 58); */
+    background-color: rgb(53 54 58);
+    /* opacity: 0.5; */
+}
+
 .row-1{
     display: flex;
     justify-content: center;
     /* align-items: center; */
    
 }
-.erase , .enter{
-    border:1px solid black;
+.erase , .enter {
+    border:1px solid white;
     width:100px;
     height: 65px;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:whitesmoke;
+    border-radius:5px;
+
 }
 .row-3{
     display: flex;
@@ -48,20 +73,59 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 .keycell{
     width: 65px;
     height: 65px;
-    border: 1px solid black;
+    border: 1px solid white;
     font-size: 30px;
     text-transform: capitalize;
     margin: 5px;
     display: flex;
+    color:whitesmoke;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
-.keycell-2{
-    width: 63px;
-    height: 63px;
-    
+ .enter:hover, .keycell:hover{
+    opacity: 0.5;
+    border: 1px solid yellowgreen;
+    color:yellowgreen
 }
+.erase:hover{
+    opacity: 0.5;
+    border: 1px solid crimson;
+    color:crimson
+}
+.enter:hover{
+    opacity: 0.5;
+    border: 1px solid green;
+    color:green
+}
+.gameOver{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.btn{
+    margin-top: 10px;
+    height: 50px;
+    font-size: 30px;
+    background-color: black;
+    color:white;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.btn:hover{
+    border: 2px solid goldenrod;
+    opacity: 0.5;
+    color:yellowgreen
+
+}
+/*  */
